@@ -27,8 +27,8 @@ Mijn startniveau is: blauw
   Mijn uitdaging ligt in mijn gehele ervaring in Hmtl/CSS, dit heb ik namelijk nog noit gedaan. Wel vind ik het erg leuk om aan de slag mee te gaan, omdat ik echt het gevoel heb dat ik een nieuw skill ga leren. Ik hoop tot een goed eindresultaat te komen met animaties die vloeiend verlopen en er realistisch uitzien.
 
   ### De eerste versie/schets:
-  <img src="readme-images/dummy-plaatje.jpg" width="375px" alt="eerste versie/schets">
-
+  <img src="readme-images/IMG_5078.jpg" width="375px" alt="eerste versie/schets">
+ <img src="readme-images/IMG_5079.jpg" width="375px" alt="eerste versie/schets">
 
   ### Je ambitie: 
   Aan deze technieken/punten wil ik werken:
