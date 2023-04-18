@@ -31,11 +31,12 @@ Toelichting:
 Map van Mario Kart met Mario als bestuurder. Hij rijdt langs alle soorten vraagteken boxen door de jaren heen. Wanneer hij een box aanraakt krijg je een silhouette van een item met daarin de text van de uitleg van de box.
 
 Ideeën
-'Fake' box, waardoor Mario uitglijdt
-Item toepassen als je de uitleg gelezen hebt.
-Map van kleur veranderen als hij een 'ander tijdperk' ingaat.
-Mario besturen met pijltjes of klikken op een vraagteken om ernaar toe te gaan, afhankelijk van moeilijkheid?
-De boxen hebben allemaal hun eigen manier van bewegen/uiterlijk, deze ook toepassen.
+- 'Fake' box, waardoor Mario uitglijdt
+- Item toepassen als je de uitleg gelezen hebt.
+- - Map van kleur veranderen als hij een 'ander tijdperk' ingaat.
+- Mario besturen met pijltjes of klikken op een vraagteken om ernaar toe te gaan, afhankelijk van moeilijkheid?
+- De boxen hebben allemaal hun eigen manier van bewegen/uiterlijk, deze ook toepassen.
+
   <img src="readme-images/IMG_5078.jpg" width="375px" alt="eerste versie/schets">
  <img src="readme-images/IMG_5079.jpg" width="375px" alt="eerste versie/schets">
 
