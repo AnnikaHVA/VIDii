@@ -33,7 +33,7 @@ Map van Mario Kart met Mario als bestuurder. Hij rijdt langs alle soorten vraagt
 Ideeën
 - 'Fake' box, waardoor Mario uitglijdt
 - Item toepassen als je de uitleg gelezen hebt.
-- - Map van kleur veranderen als hij een 'ander tijdperk' ingaat.
+- Map van kleur veranderen als hij een 'ander tijdperk' ingaat.
 - Mario besturen met pijltjes of klikken op een vraagteken om ernaar toe te gaan, afhankelijk van moeilijkheid?
 - De boxen hebben allemaal hun eigen manier van bewegen/uiterlijk, deze ook toepassen.
 
