@@ -63,9 +63,9 @@ Ik heb feedback gekregen op mijn eerste schetsen.
 
   #### oplossing:
 Om dit toe te passen ben ik opzoek gegaan naar meerdere varianten van het Mario Circuit. Hierbij heb ik gekeken naar de structuur van de grond, de weg en van het gras. Deze heb ik vervolgens apart opgezocht en hiermee verschillende achtergronden gemaakt.
-<img src="../readme-images/Screen3" width="375px" alt="grond structuur Mario">
-<img src="../readme-images/Screen4" width="375px" alt="varianten circuit">
-<<img src="readme-images/Screen5" width="375px" alt="zelfgemaakt circuit">
+<img src="readme-images/Screen3.png" width="375px" alt="grond structuur Mario">
+<img src="readme-images/Screen4.png" width="375px" alt="varianten circuit">
+<<img src="readme-images/Screen5.png" width="375px" alt="zelfgemaakt circuit">
 
 
 
@@ -83,13 +83,13 @@ Om dit toe te passen ben ik opzoek gegaan naar meerdere varianten van het Mario 
 
  ### Bevinding 4:
  Terwijl ik aan de slag ben gegaan ben ik tegen meerdere dingen aangelopen. Zo wilde ik graag een font van het web gebruiken voor het vraagteken in de eerst box, alleen wilde deze maar niet geactiveerd worden.
- <<img src="readme-images/Screen1" width="375px" alt="problemen font">
+ <<img src="readme-images/Screen1.png" width="375px" alt="problemen font">
 #### oplossing:
 Na veel Googelen lukte het nog steeds niet en ben ik met Sanne gaan zitten. Het probleem was simpel terug te leiden naar enkele punten die in de source vermelding miste.
 
 ### Bevinding 5:
 Voor het tweede vierkant wilde ik deze vullen met een gradient. Vanuit de eerste instroomles had ik hier al ervaring mee, maar ook de gradient wilde niet tot stand komen. Ook hier weer veel gegoogled, maar ik kon het probleem niet vinden.
-<<img src="readme-images/Screen2" width="375px" alt="problemen gradient">
+<<img src="readme-images/Screen2.png" width="375px" alt="problemen gradient">
 #### oplossing:
 Uiteindelijk heb ik een gradient generator van het internet gebruikt. Dit had ik nooit eerder gedaan, maar het was eenvoudig om uit te voeren.
 </details>
