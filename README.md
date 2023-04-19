@@ -63,8 +63,8 @@ Ik heb feedback gekregen op mijn eerste schetsen.
 
   #### oplossing:
 Om dit toe te passen ben ik opzoek gegaan naar meerdere varianten van het Mario Circuit. Hierbij heb ik gekeken naar de structuur van de grond, de weg en van het gras. Deze heb ik vervolgens apart opgezocht en hiermee verschillende achtergronden gemaakt.
-<img src="readme-images/Screen3" width="375px" alt="grond structuur Mario">
-<img src="readme-images/Screen4" width="375px" alt="varianten circuit">
+<img src="../readme-images/Screen3" width="375px" alt="grond structuur Mario">
+<img src="../readme-images/Screen4" width="375px" alt="varianten circuit">
 <<img src="readme-images/Screen5" width="375px" alt="zelfgemaakt circuit">
 
 
