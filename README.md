@@ -56,26 +56,42 @@ Ideeën
 
 <details>
   <summary>Mijn bevindingen + wijzigingen (minimaal 5)</summary>
+Ik heb feedback gekregen op mijn eerste schetsen.
 
   ### Bevinding 1:
-  Omschrijving van wat er nog niet orde was (tekst en afbeeding(en)).
+ Het eerste punt wat naar voren kwam is dat in plaats van een andere 'kleur overlay' bij elke variant van Mario Kart ik een thema kan toevoegen. Hierbij gaf de feedbackgever een idee van een map die je over tijd ziet veranderen.
 
   #### oplossing:
-  Beschrijving hoe je het hebt hebt opgelost of als het niet gelukt is hoe je het zou oplossen (tekst en afbeeding(en)).
+Om dit toe te passen ben ik opzoek gegaan naar meerdere varianten van het Mario Circuit. Hierbij heb ik gekeken naar de structuur van de grond, de weg en van het gras. Deze heb ik vervolgens apart opgezocht en hiermee verschillende achtergronden gemaakt.
+<img src="readme-images/Screenshot 2023-04-19 at 12.02.49" width="375px" alt="grond structuur Mario">
+<img src="readme-images/Screenshot 2023-04-19 at 12.03.03" width="375px" alt="varianten circuit">
+<<img src="readme-images/Screenshot 2023-04-19 at 12.09.00" width="375px" alt="zelfgemaakt circuit">
 
 
 
   ### Bevinding 2:
-  Omschrijving van wat er nog niet orde was (tekst en afbeeding(en)).
-
+  Het tweede punt ging over de besturing, hier heb ik verschillende mogelijkheden gehoord wat er mogelijk is. Zo kan ik scrollen met een gefixeerde positie, met pijltjes besturen of een muis volgen.
   #### oplossing:
-  Beschrijving hoe je het hebt hebt opgelost of als het niet gelukt is hoe je het zou oplossen (tekst en afbeeding(en)).
+  Uiteindelijk heb ik in overleg gekozen om te scrollen i.v.m. de moeilijkheidsgraad die hier lager ligt.
 
 
 
   ### Bevinding 3:
-  ...
+  Mijn derde feedback heb ik gekregen over de paaseieren in de game. Zo heb ik nog meer ideen gekregen wat ik hiervoor zou kunnen gebruiken. Zelf had ik al het ideen om een 'fake box' neer te zetten. Nu heb ik ook nog meer variaties die ik kan toepassen; een banaan, olievlek en mushrooms.
+  #### oplossing:
+  Deze ga ik toepassen in mijn animatie.
 
+ ### Bevinding 4:
+ Terwijl ik aan de slag ben gegaan ben ik tegen meerdere dingen aangelopen. Zo wilde ik graag een font van het web gebruiken voor het vraagteken in de eerst box, alleen wilde deze maar niet geactiveerd worden.
+ <<img src="readme-images/Screenshot 2023-04-19 at 10.13.25" width="375px" alt="problemen font">
+#### oplossing:
+Na veel Googelen lukte het nog steeds niet en ben ik met Sanne gaan zitten. Het probleem was simpel terug te leiden naar enkele punten die in de source vermelding miste.
+
+### Bevinding 5:
+Voor het tweede vierkant wilde ik deze vullen met een gradient. Vanuit de eerste instroomles had ik hier al ervaring mee, maar ook de gradient wilde niet tot stand komen. Ook hier weer veel gegoogled, maar ik kon het probleem niet vinden.
+<<img src="readme-images/Screenshot 2023-04-19 at 11.02.59" width="375px" alt="problemen gradient">
+#### oplossing:
+Uiteindelijk heb ik een gradient generator van het internet gebruikt. Dit had ik nooit eerder gedaan, maar het was eenvoudig om uit te voeren.
 </details>
 
 

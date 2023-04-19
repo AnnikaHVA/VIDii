@@ -3,6 +3,11 @@
 /*************/
 
 /* naar een idee van Jen Simmons */
+@font-face {
+  font-family: "Vraagteken1992";
+  src: url(../fonts/Minecraft.ttf);
+}
+
 *, *::after, *::before {
   box-sizing:border-box;  
 }
@@ -59,6 +64,7 @@ ol {
 }
 
 li {
+  position: relative;
   background-color: red;
   height:100%;
   flex-shrink: 0;
@@ -67,4 +73,70 @@ li {
 li img {
   width:100%;
   height:100%;
+}
+
+li:nth-of-type(1) div{
+  position: absolute;
+  top:35%;
+  left:40%;
+  width: 10vmin;
+  height: 10vmin;
+  background-color: rgb(244 164 96);
+  /* background-color: color(display-p3 0.244 0.164 0.96); */
+  text-align: center;
+  line-height: 1em;
+  font-family:"Vraagteken19";
+  box-shadow:inset -.1em -.1em 0em black,
+  inset .1em .1em 0em rgb(210 105 30);
+  font-size:8vmin;
+  font-family:"Vraagteken1992";
+
+  display:flex;
+  align-items:end;
+  justify-content: center;
+}
+
+li:nth-of-type(2) div{
+  /* background-image: linear-gradient(rgb 225 3 3, 0% rgb 0 255 246, 25% rgb 45 51 121, 50% rgb 255 237 0, 75% rgb 11 255 0, 100%); 
+  Bovenstaande was mijn poging tot de gradient, maar wilde niet lukken. Onderstaande is vanuit een generator via https://coolors.co/gradient-maker/e9b7ce-ff0000-ff0000-00c8ff-4000ff-f7ff00-1aff00?position=0,0,9,33,52,76,92&opacity=100,100,100,100,100,100,100&type=linear&rotation=45*/
+  background: hsla(332, 53%, 82%, 1);
+  background: linear-gradient(45deg, hsla(332, 53%, 82%, 1) 0%, hsla(0, 100%, 50%, 1) 0%, hsla(0, 100%, 50%, 1) 9%, hsla(193, 100%, 50%, 1) 33%, hsla(255, 100%, 50%, 1) 52%, hsla(62, 100%, 50%, 1) 76%, hsla(114, 100%, 50%, 1) 92%);
+  filter: progid: DXImageTransform.Microsoft.gradient( startColorstr="#E9B7CE", endColorstr="#FF0000", GradientType=1 );
+  position: absolute;
+  box-shadow: .5em .5em 1.5em black;
+  top:35%;
+  left:50%;
+  width: 10vmin;
+  height: 10vmin;
+  rotate:45deg;
+  animation-name: rotate;
+  animation-duration: 5s;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-in-out;
+}
+
+@keyframes rotate {
+  0% {
+    transform: rotateY(0deg);
+  }
+  50% {
+    transform: rotateY(180deg);
+  }
+  100% {
+    transform: rotateY(0deg);
+  }
+}
+
+li:nth-of-type(2) span{
+  display:block;
+  color: black;
+  rotate:-45deg;
+  font-size:8vmin;
+  color: white;
+  
+  line-height: 1.2em;
+  display:flex;
+  align-items:center;
+  justify-content: center;
+  font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif
 }
