@@ -5,9 +5,12 @@
 /* naar een idee van Jen Simmons */
 @font-face {
   font-family: "Vraagteken1992";
-  src: url(../fonts/Minecraft.ttf);
+  src: url(../fonts/minecraft-webfont.woff2);
 }
-
+@font-face {
+  font-family: "vraagteken3";
+  src: url(../fonts/bubblebobble-rg3rx-webfont.woff2);
+}
 *, *::after, *::before {
   box-sizing:border-box;  
 }
@@ -19,8 +22,6 @@ body {
 button:not([disabled]) {
   cursor:pointer;
 }
-
-
 
 
 
@@ -85,12 +86,12 @@ li:nth-of-type(1) div{
   /* background-color: color(display-p3 0.244 0.164 0.96); */
   text-align: center;
   line-height: 1em;
-  font-family:"Vraagteken19";
+  font-family:"Vraagteken19", sans-serif;
   box-shadow:inset -.1em -.1em 0em black,
   inset .1em .1em 0em rgb(210 105 30);
   font-size:8vmin;
   font-family:"Vraagteken1992";
-
+  rotate:10deg;
   display:flex;
   align-items:end;
   justify-content: center;
@@ -103,40 +104,214 @@ li:nth-of-type(2) div{
   background: linear-gradient(45deg, hsla(332, 53%, 82%, 1) 0%, hsla(0, 100%, 50%, 1) 0%, hsla(0, 100%, 50%, 1) 9%, hsla(193, 100%, 50%, 1) 33%, hsla(255, 100%, 50%, 1) 52%, hsla(62, 100%, 50%, 1) 76%, hsla(114, 100%, 50%, 1) 92%);
   filter: progid: DXImageTransform.Microsoft.gradient( startColorstr="#E9B7CE", endColorstr="#FF0000", GradientType=1 );
   position: absolute;
-  box-shadow: .5em .5em 1.5em black;
   top:35%;
-  left:50%;
+  
   width: 10vmin;
   height: 10vmin;
-  rotate:45deg;
+  /* rotate:45deg; */
   animation-name: rotate;
   animation-duration: 5s;
   animation-iteration-count: infinite;
-  animation-timing-function: ease-in-out;
+  animation-timing-function: linear;
+}
+
+li:nth-of-type(2) div:nth-of-type(1) {
+  left:40%;
+  box-shadow: .5em .5em 1.5em black;
+}
+
+li:nth-of-type(2) div:nth-of-type(2) {
+  left:60%;
+  rotate:180deg;
+  box-shadow: -.5em -.5em 1.5em black;
 }
 
 @keyframes rotate {
   0% {
-    transform: rotateY(0deg);
-  }
-  50% {
-    transform: rotateY(180deg);
+    transform: rotateY(0deg) rotateZ(45deg);
   }
   100% {
-    transform: rotateY(0deg);
+    transform: rotateY(360deg) rotateZ(45deg);
   }
 }
 
 li:nth-of-type(2) span{
   display:block;
-  color: black;
-  rotate:-45deg;
   font-size:8vmin;
   color: white;
+  font-family: vraagteken3;
+  line-height: 1.2em;
+  display:flex;
+  align-items:center;
+  justify-content: center;
+  font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+
+  animation-name: rotateFlip;
+  animation-duration: 5s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+}
+
+@keyframes rotateFlip {
+  0%, 24.99% {
+    transform: rotateZ(-45deg);
+  }
+
+  25%, 74.99% {
+    transform: rotateZ(-45deg) scaleX(-1);
+  }
+  75%, 100% {
+    transform: rotateZ(-45deg);
+  }
+}
+
+@keyframes turn {
+    from {
+      transform: rotatey(0deg) rotatex(45deg) rotatez(60deg);
+    }
+    to {
+      transform: rotatey(360deg)rotatex(45deg)rotatez(60deg);
+    }
+  }
+
+  li:nth-of-type(3){
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-size:8vmin;
+    font-family: "vraagteken3";
+    line-height: 1.2em;
+    display:flex;
+    justify-content: center;
+    text-align: center;
+  }
+
+  .cube {
+    --cube-size:60px;
+    width: var(--cube-size);
+    aspect-ratio:1/1;
+    transform-style: preserve-3d;
+    position: absolute;
+  }
+
+  .face {
+  width: 100%;
+  height: 100%;
+  background: #ff6d00;
+  border: 2px solid white;
+  position: absolute;
+  top:0;
+  left:0;
+  }
+  .front {
+  transform: translateZ( calc(var(--cube-size) / 2) );
+  background-color: red;
+  }
+  .back {
+  transform: translateZ( calc(var(--cube-size) / -2) ) rotateY(180deg);
+  background-color: red;
+  }
+  .left {
+  transform: translateX( calc(var(--cube-size) / 2)  ) rotateY(-90deg);
+  background-color: blue;
+  }
+  .right {
+  transform: translateX( calc(var(--cube-size) / -2) ) rotateY(90deg);
+  background-color: blue;
+  }
+  .top {
+  transform: translateY( calc(var(--cube-size) / -2) ) rotateX(90deg);
+  background-color: green;
+  }
+  .bottom {
+  transform: translateY( calc(var(--cube-size) / 2) ) rotateX(-90deg);
+  background-color: green;
+  }
+
+  keyframes turn {
+    from {
+      transform: rotatey(0deg) rotatex(45deg) rotatez(60deg);
+    }
+    to {
+      transform: rotatey(360deg)rotatex(45deg)rotatez(60deg);
+    }
+  }
+
+  li:nth-of-type(4){
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-size:8vmin;
+    font-family: "vraagteken3";
+    line-height: 1.2em;
+    display:flex;
+    justify-content: center;
+    text-align: center;
+  }
+
+  .cube2 {
+    --cube-size:60px;
+    width: var(--cube-size);
+    aspect-ratio:1/1;
+    transform-style: preserve-3d;
+    animation: turn 5s linear infinite;
+    position: absolute;
+  }
+
+  .face2 {
+  width: 100%;
+  height: 100%;
+  background: #ff6d00;
+  border: 2px solid white;
+  position: absolute;
+  top:0;
+  left:0;
+  }
+  .front2 {
+  transform: translateZ( calc(var(--cube-size) / 2) );
+  background-color: red;
+  }
+  .back2 {
+  transform: translateZ( calc(var(--cube-size) / -2) ) rotateY(180deg);
+  background-color: red;
+  }
+  .left2 {
+  transform: translateX( calc(var(--cube-size) / 2)  ) rotateY(-90deg);
+  background-color: blue;
+  }
+  .right2 {
+  transform: translateX( calc(var(--cube-size) / -2) ) rotateY(90deg);
+  background-color: blue;
+  }
+  .top2 {
+  transform: translateY( calc(var(--cube-size) / -2) ) rotateX(90deg);
+  background-color: green;
+  }
+  .bottom2 {
+  transform: translateY( calc(var(--cube-size) / 2) ) rotateX(-90deg);
+  background-color: green;
+  }
+  
+
+/* li:nth-of-type(3) div{
+  background-color: green;
+  top:35%;
+  position: absolute;
+  width: 10vmin;
+  height: 10vmin;
+  left:40%;
+} */
+
+/* li:nth-of-type(3) span{
+  color: white;
+  display:block;
+  font-size:8vmin;
   
   line-height: 1.2em;
   display:flex;
   align-items:center;
   justify-content: center;
-  font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif
-}
+  font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+} */
