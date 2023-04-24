@@ -11,6 +11,11 @@
   font-family: "vraagteken3";
   src: url(../fonts/bubblebobble-rg3rx-webfont.woff2);
 }
+
+@font-face {
+  font-family: "vraagteken4" ;
+  src: url(../fonts/koopakartdoubledash-regular-webfont.woff2);
+}
 *, *::after, *::before {
   box-sizing:border-box;  
 }
@@ -165,14 +170,6 @@ li:nth-of-type(2) span{
   }
 }
 
-@keyframes turn {
-    from {
-      transform: rotatey(0deg) rotatex(45deg) rotatez(60deg);
-    }
-    to {
-      transform: rotatey(360deg)rotatex(45deg)rotatez(60deg);
-    }
-  }
 
   li:nth-of-type(3){
     display: flex;
@@ -181,7 +178,7 @@ li:nth-of-type(2) span{
     color: white;
     font-size:8vmin;
     font-family: "vraagteken3";
-    line-height: 1.2em;
+    line-height:1em;
     display:flex;
     justify-content: center;
     text-align: center;
@@ -193,7 +190,33 @@ li:nth-of-type(2) span{
     aspect-ratio:1/1;
     transform-style: preserve-3d;
     position: absolute;
+    animation-name: bounce;
+    animation-duration: 1.5s;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
+    box-shadow: 1em 1em 2em black;
   }
+
+  /* @keyframes bounce {
+  0%{bottom: 0.5em;
+  margin-bottom: 2.5em;}
+  50%{bottom: 1em;
+    margin-bottom: 2.5em;}
+  100%{bottom: 0.5em;
+    margin-bottom: 2.5em;}
+  } */
+
+  @keyframes bounce {
+  0%{
+    transform: scaleX(1) scaleY(1) scaleZ(1) rotateX(45deg) rotateY(45deg) rotateZ(0deg);
+  }
+  50% {
+    transform: scaleX(.75) scaleY(.75) scaleZ(.75) rotateX(45deg) rotateY(45deg) rotateZ(0deg);
+  }
+  100% {
+    transform: scaleX(1) scaleY(1) scaleZ(1) rotateX(45deg) rotateY(45deg) rotateZ(0deg);
+  }
+}
 
   .face {
   width: 100%;
@@ -229,7 +252,7 @@ li:nth-of-type(2) span{
   background-color: green;
   }
 
-  keyframes turn {
+  @keyframes turn {
     from {
       transform: rotatey(0deg) rotatex(45deg) rotatez(60deg);
     }
@@ -242,13 +265,10 @@ li:nth-of-type(2) span{
     display: flex;
     justify-content: center;
     align-items: center;
-    color: white;
-    font-size:8vmin;
-    font-family: "vraagteken3";
     line-height: 1.2em;
     display:flex;
     justify-content: center;
-    text-align: center;
+
   }
 
   .cube2 {
@@ -264,35 +284,375 @@ li:nth-of-type(2) span{
   width: 100%;
   height: 100%;
   background: #ff6d00;
-  border: 2px solid white;
+  border: 5px solid white;
   position: absolute;
   top:0;
   left:0;
+  opacity: 40%;
   }
   .front2 {
   transform: translateZ( calc(var(--cube-size) / 2) );
-  background-color: red;
+  background-color: deeppink;
+  background-image:
+  linear-gradient(45deg, lightpink 25%, transparent 25%), 
+  linear-gradient(-45deg, lightpink 25%, transparent 25%),
+  linear-gradient(45deg, transparent 75%, lightpink 75%),
+  linear-gradient(-45deg, transparent 75%, lightpink 75%);
+
+  background-size:20px 20px;    
+  background-position:0 0, 9px 0, 9px -9px, 0px 9px;
   }
   .back2 {
   transform: translateZ( calc(var(--cube-size) / -2) ) rotateY(180deg);
-  background-color: red;
+  background-color: dodgerblue;
+  background-image:
+  linear-gradient(45deg, deeppink 25%, transparent 25%), 
+  linear-gradient(-45deg, deeppink 25%, transparent 25%),
+  linear-gradient(45deg, transparent 75%, deeppink 75%),
+  linear-gradient(-45deg, transparent 75%, deeppink 75%);
+
+  background-size:20px 20px;    
+  background-position:0 0, 9px 0, 9px -9px, 0px 9px;
   }
   .left2 {
   transform: translateX( calc(var(--cube-size) / 2)  ) rotateY(-90deg);
-  background-color: blue;
+  background-color: darkblue;
+  background-image:
+  linear-gradient(45deg, yellow 25%, transparent 25%), 
+  linear-gradient(-45deg, yellow 25%, transparent 25%),
+  linear-gradient(45deg, transparent 75%, yellow 75%),
+  linear-gradient(-45deg, transparent 75%, yellow 75%);
+
+  background-size:20px 20px;    
+  background-position:0 0, 9px 0, 9px -9px, 0px 9px;
   }
   .right2 {
   transform: translateX( calc(var(--cube-size) / -2) ) rotateY(90deg);
-  background-color: blue;
+  background-color: forestgreen;
+  background-image:
+  linear-gradient(45deg, turquoise 25%, transparent 25%), 
+  linear-gradient(-45deg, turquoise 25%, transparent 25%),
+  linear-gradient(45deg, transparent 75%, turquoise 75%),
+  linear-gradient(-45deg, transparent 75%, turquoise 75%);
+
+  background-size:20px 20px;    
+  background-position:0 0, 9px 0, 9px -9px, 0px 9px;
   }
   .top2 {
   transform: translateY( calc(var(--cube-size) / -2) ) rotateX(90deg);
-  background-color: green;
+  background-color: turquoise;
+  background-image:
+  linear-gradient(45deg, darkorange 25%, transparent 25%), 
+  linear-gradient(-45deg, darkorange 25%, transparent 25%),
+  linear-gradient(45deg, transparent 75%, darkorange 75%),
+  linear-gradient(-45deg, transparent 75%, darkorange 75%);
+
+  background-size:20px 20px;    
+  background-position:0 0, 9px 0, 9px -9px, 0px 9px;
   }
   .bottom2 {
   transform: translateY( calc(var(--cube-size) / 2) ) rotateX(-90deg);
-  background-color: green;
+  background-color: deeppink;
+  background-image:
+  linear-gradient(45deg, purple 25%, transparent 25%), 
+  linear-gradient(-45deg, purple 25%, transparent 25%),
+  linear-gradient(45deg, transparent 75%, purple 75%),
+  linear-gradient(-45deg, transparent 75%, purple 75%);
+
+  background-size:20px 20px;    
+  background-position:0 0, 9px 0, 9px -9px, 0px 9px;
   }
+  
+  li:nth-of-type(4) span{
+    font-size:8vmin;
+    color: white;
+    font-family: vraagteken3;
+    line-height: 1.2em;
+    display:flex;
+    align-items:center;
+    justify-content: center;
+    font-family: "vraagteken4", sans-serif;
+
+    animation-name: vraagtekenbounce1;
+    animation-duration: 1.5s;
+    animation-iteration-count: infinite;
+    text-shadow: 2px 2px 3px darkblue;
+  }
+
+  @keyframes vraagtekenbounce1 {
+    0%{
+      transform: scaleX(1) scaleY(1) scaleZ(1)
+  }
+  50% {
+    transform: scaleX(1.5) scaleY(1.5) scaleZ(1.5) 
+  }
+  100% {
+    transform: scaleX(1) scaleY(1) scaleZ(1)
+}
+  }
+
+  @keyframes turn {
+    from {
+      transform: rotatey(0deg) rotatex(45deg) rotatez(60deg);
+    }
+    to {
+      transform: rotatey(360deg)rotatex(45deg)rotatez(60deg);
+    }
+  }
+
+  li:nth-of-type(5){
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    line-height: 1.2em;
+    display:flex;
+    justify-content: center;
+
+  }
+
+  .cube3 {
+    --cube-size:60px;
+    width: var(--cube-size);
+    aspect-ratio:1/1;
+    transform-style: preserve-3d;
+    animation: turn 5s linear infinite;
+    position: absolute;
+  }
+
+  .face3 {
+  width: 100%;
+  height: 100%;
+  background: black;
+  border: 3px solid white;
+  position: absolute;
+  top:0;
+  left:0;
+  opacity: 40%;
+  }
+  .front3 {
+  transform: translateZ( calc(var(--cube-size) / 2) );
+  background-color: red;
+  background-image:
+  linear-gradient(45deg, black 25%, transparent 25%), 
+  linear-gradient(-45deg, black 25%, transparent 25%),
+  linear-gradient(45deg, transparent 75%, black 75%),
+  linear-gradient(-45deg, transparent 75%, black 75%);
+
+  background-size:20px 20px;    
+  background-position:0 0, 9px 0, 9px -9px, 0px 9px;
+  }
+  .back3 {
+  transform: translateZ( calc(var(--cube-size) / -2) ) rotateY(180deg);
+  background-color: yellow;
+  background-image:
+  linear-gradient(45deg, black 25%, transparent 25%), 
+  linear-gradient(-45deg, black 25%, transparent 25%),
+  linear-gradient(45deg, transparent 75%, black 75%),
+  linear-gradient(-45deg, transparent 75%, black 75%);
+
+  background-size:20px 20px;    
+  background-position:0 0, 9px 0, 9px -9px, 0px 9px;
+  }
+  .left3 {
+  transform: translateX( calc(var(--cube-size) / 2)  ) rotateY(-90deg);
+  background-color: turquoise;
+  background-image:
+  linear-gradient(45deg, black 25%, transparent 25%), 
+  linear-gradient(-45deg, black 25%, transparent 25%),
+  linear-gradient(45deg, transparent 75%, black 75%),
+  linear-gradient(-45deg, transparent 75%, black 75%);
+
+  background-size:20px 20px;    
+  background-position:0 0, 9px 0, 9px -9px, 0px 9px;
+  }
+  .right3 {
+  transform: translateX( calc(var(--cube-size) / -2) ) rotateY(90deg);
+  background-color: deeppink;
+  background-image:
+  linear-gradient(45deg, black 25%, transparent 25%), 
+  linear-gradient(-45deg, black 25%, transparent 25%),
+  linear-gradient(45deg, transparent 75%, black 75%),
+  linear-gradient(-45deg, transparent 75%, black 75%);
+
+  background-size:20px 20px;    
+  background-position:0 0, 9px 0, 9px -9px, 0px 9px;
+  }
+  .top3 {
+  transform: translateY( calc(var(--cube-size) / -2) ) rotateX(90deg);
+  background-color: dodgerblue;
+  background-image:
+  linear-gradient(45deg, black 25%, transparent 25%), 
+  linear-gradient(-45deg, black 25%, transparent 25%),
+  linear-gradient(45deg, transparent 75%, black 75%),
+  linear-gradient(-45deg, transparent 75%, black 75%);
+
+  background-size:20px 20px;    
+  background-position:0 0, 9px 0, 9px -9px, 0px 9px;
+  }
+  .bottom3 {
+  transform: translateY( calc(var(--cube-size) / 2) ) rotateX(-90deg);
+  background-color: forestgreen;
+  background-image:
+  linear-gradient(45deg, black 25%, transparent 25%), 
+  linear-gradient(-45deg, black 25%, transparent 25%),
+  linear-gradient(45deg, transparent 75%, black 75%),
+  linear-gradient(-45deg, transparent 75%, black 75%);
+
+  background-size:20px 20px;    
+  background-position:0 0, 9px 0, 9px -9px, 0px 9px;
+  }
+  
+  li:nth-of-type(5) span{
+    font-size:8vmin;
+    color: white;
+    font-family: vraagteken3;
+    line-height: 1.2em;
+    display:flex;
+    align-items:center;
+    justify-content: center;
+    font-family: "vraagteken4", sans-serif;
+
+    animation-name: vraagtekenbounce2;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+    text-shadow: 4px 4px 4px black;
+  }
+
+  @keyframes vraagtekenbounce2 {
+    0%{
+      transform: rotateX(0deg) rotateY(0deg) rotateZ(0deg);
+  }
+  50% {
+    transform: rotateX(0deg) rotateY(360deg) rotateZ(0deg);
+  }
+  100% {
+    transform: rotateX(0deg) rotateY(0deg) rotateZ(0deg);
+}
+  }
+
+  @keyframes turn {
+    from {
+      transform: rotatey(0deg) rotatex(45deg) rotatez(60deg);
+    }
+    to {
+      transform: rotatey(360deg)rotatex(45deg)rotatez(60deg);
+    }
+  }
+
+  li:nth-of-type(6){
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    line-height: 1.2em;
+    display:flex;
+    justify-content: center;
+  }
+
+  .cube4 {
+    --cube-size:60px;
+    width: var(--cube-size);
+    aspect-ratio:1/1;
+    transform-style: preserve-3d;
+    animation: turn 5s linear infinite;
+    position: absolute;
+  }
+
+  .face4 {
+  width: 100%;
+  height: 100%;
+  background: #ff6d00;
+  position: absolute;
+  top:0;
+  left:0;
+  opacity: 40%;
+  }
+  .front4 {
+  transform: translateZ( calc(var(--cube-size) / 2) );
+  background-color:deeppink;
+  background-image: radial-gradient(purple 15%, transparent 15%),
+  radial-gradient(turquoise 40%, transparent 40%);
+  background-size:20px 20px;
+  background-position: 5px 10px, 40px 40px; 
+  }
+  .back4 {
+  transform: translateZ( calc(var(--cube-size) / -2) ) rotateY(180deg);
+  background-color:deeppink;
+  background-image: radial-gradient(purple 15%, transparent 15%),
+  radial-gradient(turquoise 40%, transparent 40%);
+  background-size:20px 20px;
+  background-position: 5px 10px, 40px 40px; 
+  }
+  .left4 {
+  transform: translateX( calc(var(--cube-size) / 2)  ) rotateY(-90deg);
+  background-color:dodgerblue;
+  background-image: radial-gradient(dodgerblue 15%, transparent 15%),
+  radial-gradient(white 40%, transparent 40%);
+  background-size:20px 20px;
+  background-position: 5px 10px, 40px 40px; 
+  }
+  .right4 {
+  transform: translateX( calc(var(--cube-size) / -2) ) rotateY(90deg);
+  background-color:turquoise;
+  background-image: radial-gradient(dodgerblue 15%, transparent 15%),
+  radial-gradient(white 40%, transparent 40%);
+  background-size:20px 20px;
+  background-position: 5px 10px, 40px 40px; 
+  }
+  .top4 {
+  transform: translateY( calc(var(--cube-size) / -2) ) rotateX(90deg);
+  background-color:lightgreen;
+  background-image: radial-gradient(turquoise 15%, transparent 15%),
+  radial-gradient(deeppink 40%, transparent 40%);
+  background-size:20px 20px;
+  background-position: 5px 10px, 40px 40px; 
+  }
+  .bottom4 {
+  transform: translateY( calc(var(--cube-size) / 2) ) rotateX(-90deg);
+  background-color:lightgreen;
+  background-image: radial-gradient(turquoise 15%, transparent 15%),
+  radial-gradient(deeppink 40%, transparent 40%);
+  background-size:20px 20px;
+  background-position: 5px 10px, 40px 40px; 
+  }
+  
+  li:nth-of-type(6) span{
+    font-size:8vmin;
+    color: white;
+    font-family: vraagteken3;
+    line-height: 1.2em;
+    display:flex;
+    align-items:center;
+    justify-content: center;
+    font-family: "vraagteken4", sans-serif;
+
+    animation-name: vraagtekenbounce3;
+    animation-duration: 1.5s;
+    animation-iteration-count: infinite;
+    text-shadow: 5px 5px 5px dodgerblue;
+  }
+
+  @keyframes vraagtekenbounce3 {
+    0%{
+      transform: scaleX(1) scaleY(1) scaleZ(1)
+  }
+  50% {
+    transform: scaleX(1.5) scaleY(1.5) scaleZ(1.5) 
+  }
+  100% {
+    transform: scaleX(1) scaleY(1) scaleZ(1)
+}
+  }
+
+/* transform: translateZ( calc(var(--cube-size) / 2) );
+  background-color:black;
+  background-image: radial-gradient(blue 15%, transparent 15%),
+  radial-gradient(red 40%, transparent 40%);
+  background-size:20px 20px;
+  background-position: 5px 10px, 40px 40px; */
+
+/* Vragen
+- Vraagteken roteren div 4
+- Responsiveness ruit div 4
   
 
 /* li:nth-of-type(3) div{
