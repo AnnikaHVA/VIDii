@@ -101,25 +101,68 @@ Uiteindelijk heb ik een gradient generator van het internet gebruikt. Dit had ik
 
 <details>
   <summary>Mijn bevindingen + wijzigingen (minimaal 5)</summary>
-  
+  Dit is mijn ontvangen feedback:
+
+  <<img src="readme-images/feedback2a.png" width="375px" alt="voorkant feedback">
+  <<img src="readme-images/feedback2b.png" width="375px" alt="achterkant feedback">
+  <<img src="readme-images/feedback2c.png" width="375px" alt="toevoegingen feedback">
+
   ### Bevinding 1:
-  Omschrijving van wat er nog niet orde was (tekst en afbeeding(en)).
+  Mijn eerste feedback was dat mijn elementen nog niet netjes zijn uitgelijnd. Zo is het verloop van de wegen nog niet correct. 
+
+<<img src="readme-images/verloopwegen.png" width="375px" alt="verloop wegen">
 
   #### oplossing:
-  Beschrijving hoe je het hebt hebt opgelost of als het niet gelukt is hoe je het zou oplossen (tekst en afbeeding(en)).
-
+  Dit heb ik opgelost door de wegen te herzien in Illustrator en de overgang van de wegen goed aan te laten sluiten. 
+  <<img src="readme-images/uitlijningwegen.png" width="375px" alt="uitlijning wegen">
 
 
   ### Bevinding 2:
-  Omschrijving van wat er nog niet orde was (tekst en afbeeding(en)).
+  Boxen zijn uit proportie als ze een ander formaat aannemen.
 
+  <<img src="readme-images/boxvervormd.png" width="375px" alt="box uit proportie">
+  
   #### oplossing:
-  Beschrijving hoe je het hebt hebt opgelost of als het niet gelukt is hoe je het zou oplossen (tekst en afbeeding(en)).
+  De boxen die niet relatief werkten heb ik opgelost door samen met Sanne hier naar te kijken. Uiteindelijk hebben we een variabele van de maat gemaakt, namelijk 60 px. Vervolgens hebben we deze variabele een relatieve waarde als 9vmin gegeven en voor de breedte de variabele aangehouden.
 
+  <<img src="readme-images/varcubesize.png" width="375px" alt="variabele cube size">  
+   <<img src="readme-images/cube2toegepast.png" width="375px" alt="variabele cube size toegepast">  
 
 
   ### Bevinding 3:
-  ...
+  Er staan twee losse IMG in github.
+
+  #### oplossing:
+   Deze heb ik verwijderd uit github. Eerst kon ik niet vinden hoe dit kon, maar na een paar minuten googelen kwam ik eruit.
+
+
+  ### Bevinding 4:
+  In mijn CSS is nog geen commentaar gegeven om de structuur duidelijk te maken. 
+
+  #### oplossing:
+  Ik heb overal titels toegevoegd waar de css over gaat. Denk aan Custom properties, de buttons, mario en de verschillende Li's.
+
+  <<img src="readme-images/titelcssa.png" width="375px" alt="toegevoegde titels">  
+   <<img src="readme-images/titelcssb.png" width="375px" alt="toegevoegde titels">  
+
+  ### Bevinding 5:
+  Er zijn nog een Custom Properties toegevoegd. 
+
+  #### oplossing:
+  Ik heb van alle kleuren Custom Properties gemaakt. Dit was weer even zoeken hoe het ook alweer moest. Door de powerpoints op DLO heb ik alle info weer naar boven kunnen halen. Het ging best snel en makkelijk doordat het veel kopieeren en plakken was. Wel moest ik goed kijken dat ik niet elk vlak per box een eigen custom property gaf, omdat er ook veel overlapt en ik dus dezelfde kan gebruiken.
+
+  Hieronder zie je de originele staat van de kleuren, zonder Custom Properties en eronder als ze wel zijn toegepast.
+ 
+  <<img src="readme-images/kleurgeencp.png" width="375px" alt="code geen cp">  
+  <<img src="readme-images/kleurwelcp.png" width="375px" alt="toegevoegde cp">  
+
+  ### Bevinding 5:
+  Als laatste had ik nog geen bronnen toegevoegd in mijn css, terwijl ik deze wel heb gebruikt.
+
+   #### oplossing:
+   De bronnen zijn toegevoegd en ook in de bronnenlijst gezet.
+
+   <<img src="readme-images/bronvermelding.png" width="375px" alt="bronvermelding">  
 
 </details>
 

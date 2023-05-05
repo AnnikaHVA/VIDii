@@ -1,8 +1,5 @@
-/*************/
-/* CSS RESET */
-/*************/
 
-/* naar een idee van Jen Simmons */
+/* FONTS */
 @font-face {
   font-family: "Vraagteken1992";
   src: url(../fonts/minecraft-webfont.woff2);
@@ -20,13 +17,7 @@
   box-sizing:border-box;  
 }
 
-body {
-  margin:0;
-}
 
-button:not([disabled]) {
-  cursor:pointer;
-}
 
 
 
@@ -35,8 +26,95 @@ button:not([disabled]) {
 /*********************/
 
 :root {
-  --color-headings:crimson
+  --hkleur:color(display-p3 0.7 0 0 / 1);
+  --pkleur:color(display-p3 0 0 0 / 1);
+  --move-time:5s;
+  /* LI 1 */
+  --vraagteken1achtergrond: rgb(244 164 96);
+  --vraagteken1schaduw: inset -.1em -.1em 0em black,
+  inset .1em .1em 0em rgb(210 105 30);
+
+  /* LI2
+  Onderstaande kleuren komen van vraagteken2 komen uit een generator via https://cssgradient.io */
+  --vraagteken2achtergrond: linear-gradient(45deg, hsla(332, 53%, 82%, 1) 0%, hsla(0, 100%, 50%, 1) 0%, hsla(0, 100%, 50%, 1) 9%, hsla(193, 100%, 50%, 1) 33%, hsla(255, 100%, 50%, 1) 52%, hsla(62, 100%, 50%, 1) 76%, hsla(114, 100%, 50%, 1) 92%);
+  --schaduwzwart: black;
+
+  /* LI 3 */
+  --wit: rgb(255 255 255);
+  --vraagteken3rood: rgb(255 0 0);
+  --vraagteken3groen: rgb(0 180 0);
+  --vraagteken3blauw: rgb(0 0 255);
+
+  /* Li 4 */
+  --vraagteken4vlak1achtergrond: deeppink;
+  --vraagteken4vlak1:
+  linear-gradient(45deg, lightpink 25%, transparent 25%), 
+  linear-gradient(-45deg, lightpink 25%, transparent 25%),
+  linear-gradient(45deg, transparent 75%, lightpink 75%),
+  linear-gradient(-45deg, transparent 75%, lightpink 75%);
+  --vraagteken4vlak2achtergrond:dodgerblue;
+  --vraagteken4vlak2:
+  linear-gradient(45deg, deeppink 25%, transparent 25%), 
+  linear-gradient(-45deg, deeppink 25%, transparent 25%),
+  linear-gradient(45deg, transparent 75%, deeppink 75%),
+  linear-gradient(-45deg, transparent 75%, deeppink 75%);
+  --vraagteken4vlak3achtergrond: darkblue;
+  --vraagteken4vlak3:
+  linear-gradient(45deg, yellow 25%, transparent 25%), 
+  linear-gradient(-45deg, yellow 25%, transparent 25%),
+  linear-gradient(45deg, transparent 75%, yellow 75%),
+  linear-gradient(-45deg, transparent 75%, yellow 75%);
+  --vraagteken4vlak4:
+  linear-gradient(45deg, turquoise 25%, transparent 25%), 
+  linear-gradient(-45deg, turquoise 25%, transparent 25%),
+  linear-gradient(45deg, transparent 75%, turquoise 75%),
+  linear-gradient(-45deg, transparent 75%, turquoise 75%);
+  --vraagteken4vlak5achtergrond: turquoise;
+  --vraagteken4vlak5:
+  linear-gradient(45deg, darkorange 25%, transparent 25%), 
+  linear-gradient(-45deg, darkorange 25%, transparent 25%),
+  linear-gradient(45deg, transparent 75%, darkorange 75%),
+  linear-gradient(-45deg, transparent 75%, darkorange 75%);
+  --vraagteken4vlak6:
+  linear-gradient(45deg, purple 25%, transparent 25%), 
+  linear-gradient(-45deg, purple 25%, transparent 25%),
+  linear-gradient(45deg, transparent 75%, purple 75%),
+  linear-gradient(-45deg, transparent 75%, purple 75%);
+
+  --shaduwblauw: darkblue;
+  
+  /* LI 5 */
+  --vraagteken5blokjes:
+  linear-gradient(45deg, black 25%, transparent 25%), 
+  linear-gradient(-45deg, black 25%, transparent 25%),
+  linear-gradient(45deg, transparent 75%, black 75%),
+  linear-gradient(-45deg, transparent 75%, black 75%);
+  --vraagteken5rood: red;
+  --vraagteken5blauw: dodgerblue;
+  --vraagteken5roze: deeppink;
+  --vraagteken5geel: yellow;
+  --vraagteken5turquoise: turquoise;
+  --vraagteken5groen: forestgreen;
+
+  /* LI 6 */
+  --vraagteken6roze: deeppink;
+  --vraagteken6groen: lightgreen;
+  --vraagteken6blauw: dodgerblue;
+  --vraagteken6turquoise: turquoise;
+  --vraagteken6stippaars: 
+  radial-gradient(purple 15%, transparent 15%),
+  radial-gradient(turquoise 40%, transparent 40%);
+  --vraagteken6stipwit: 
+  radial-gradient(dodgerblue 15%, transparent 15%),
+  radial-gradient(white 40%, transparent 40%);
+  --vraagteken6stiproze:
+  radial-gradient(turquoise 15%, transparent 15%),
+  radial-gradient(deeppink 40%, transparent 40%);
+
+  /* Voor de chessboard patronen is de volgende bron gebruikt: https://www.geeksforgeeks.org/how-to-create-chess-pattern-background-using-html-and-css/ 
+  Voor de ronde patronen is de volgende bron gebruikt https://www.quackit.com/css/codes/patterns/circular_background_patterns.cfm */
 }
+
 
 
 
@@ -46,54 +124,268 @@ button:not([disabled]) {
 /* ALGEMENE STYLING */
 /********************/
 
+body {
+  margin:0;
+  font-family: vraagteken4, sans-serif;
+}
+
 h1 {
-  color:var(--color-headings);
+  text-align: center;
+  color: var(--hkleur)
+}
+
+p {
+  text-align: center;
+  color: var(--pkleur);
+  margin-left: 10%;
+  margin-right: 10%;
+}
+
+button:not([disabled]) {
+  cursor:pointer;
+}
+
+main {
+  position: relative;
+  width:80vmin;
+  height:60vmin;
+  margin:0 auto 0 auto;
 }
 
 
-/* ... */
 
 
+
+
+
+/* MARIO */
+img#mario {
+  position: absolute;
+  left: 34%;
+  bottom:3%;
+  width:16%;
+  height:auto;
+}
+
+
+
+
+
+
+
+/*  ANIMATIE BUTTONS MARIO */
+main.go1992 img#mario {
+  animation-name: mario1992;
+  animation-duration: var(--move-time);
+  animation-timing-function: linear;
+  animation-fill-mode: forwards;
+}
+
+@keyframes mario1992 {
+  0% {
+    transform: translateX(0vmin);
+  }
+  55% {
+    transform: translateX(0vmin);
+  }
+  100% {
+    transform: translateX(20vmin);
+  }
+}
+
+main.go1996 img#mario {
+  animation-name: mario1996, mario1996turn;
+  animation-duration: var(--move-time), 0.5s;
+  animation-timing-function: linear;
+  animation-delay: 0s, 2s;
+  animation-fill-mode: forwards;
+}
+
+@keyframes mario1996 {
+  0% {
+    translate: 20vmin;
+  }
+  40% {
+    translate: 20vmin;
+  }
+  70% {
+    translate: 5vmin;
+  }
+  100% {
+    translate: 2vmin;
+  }
+}
+
+@keyframes mario1996turn {
+  0% {
+    transform:rotateY(0turn);
+  }
+  50% {
+    transform:rotateY(1turn);
+  }
+  100% {
+    transform:rotateY(0turn);
+  }
+}
+
+main.go2001 img#mario {
+  animation-name: mario2001;
+  animation-duration: var(--move-time);
+  animation-timing-function: linear;
+  animation-fill-mode: forwards;
+}
+
+@keyframes mario2001 {
+  0% {
+    translate: 2vmin;
+  }
+  50% {
+    translate: 5vmin;
+  } 
+  100% {
+    translate: 20vmin;
+  }
+}
+
+main.go2003 img#mario {
+  animation-name: mario2003;
+  animation-duration: var(--move-time);
+  animation-timing-function: linear;
+  animation-fill-mode: forwards;
+}
+
+@keyframes mario2003 {
+  0% {
+    translate: 20vmin;
+  }
+  50% {
+    translate: 5vmin;
+  } 
+  100% {
+    translate: -2vmin;
+  }
+}
+
+main.go2005 img#mario {
+  animation-name: mario2005;
+  animation-duration: var(--move-time);
+  animation-timing-function: linear;
+  animation-fill-mode: forwards;
+}
+
+@keyframes mario2005 {
+  0% {
+    translate: -2vmin;
+  }
+  50% {
+    translate: 5vmin;
+  } 
+  100% {
+    translate: 20vmin;
+  }
+}
+
+main.go2008 img#mario {
+  animation-name: mario2008;
+  animation-duration: var(--move-time);
+  animation-timing-function: linear;
+  animation-fill-mode: forwards;
+}
+
+@keyframes mario2008 {
+  0% {
+    translate: 20vmin;
+  }
+  50% {
+    translate: 5vmin;
+  } 
+  100% {
+    translate: -2vmin;
+  }
+}
+
+
+
+
+
+
+/* ANIMATIES WERELD  */
 ol {
   list-style: none;
   padding:0;
-  margin:0 auto 0 auto;
+  margin:0;
 
-  width:80vmin;
-  height:60vmin;
+  height:100%;
+  width:100%;
+  
   background-color:green;
 
-  overflow:scroll;
+  overflow:hidden;
 
   display:flex;
   flex-direction: column-reverse;
+
+  
 }
 
-li {
+ol li {
   position: relative;
-  background-color: red;
   height:100%;
   flex-shrink: 0;
+
+  transition:transform var(--move-time) linear;
 }
 
-li img {
+main.go1992 li {
+  transform: translateY(100%);
+}
+
+main.go1996 li {
+  transform: translateY(200%);
+}
+
+main.go2001 li {
+  transform: translateY(300%);
+}
+
+main.go2003 li {
+  transform: translateY(400%);
+}
+
+main.go2005 li {
+  transform: translateY(500%);
+}
+
+main.go2008 li {
+  transform: translateY(600%);
+}
+
+ol li img {
   width:100%;
   height:100%;
 }
 
-li:nth-of-type(1) div{
+
+
+
+
+
+
+
+
+/* OPMAAK LI 1 */
+
+ol li:nth-of-type(1) div{
   position: absolute;
   top:35%;
   left:40%;
   width: 10vmin;
   height: 10vmin;
-  background-color: rgb(244 164 96);
-  /* background-color: color(display-p3 0.244 0.164 0.96); */
+  background-color: var(--vraagteken1achtergrond);
   text-align: center;
   line-height: 1em;
   font-family:"Vraagteken19", sans-serif;
-  box-shadow:inset -.1em -.1em 0em black,
-  inset .1em .1em 0em rgb(210 105 30);
+  box-shadow: var(--vraagteken1schaduw);
   font-size:8vmin;
   font-family:"Vraagteken1992";
   rotate:10deg;
@@ -102,33 +394,39 @@ li:nth-of-type(1) div{
   justify-content: center;
 }
 
-li:nth-of-type(2) div{
-  /* background-image: linear-gradient(rgb 225 3 3, 0% rgb 0 255 246, 25% rgb 45 51 121, 50% rgb 255 237 0, 75% rgb 11 255 0, 100%); 
-  Bovenstaande was mijn poging tot de gradient, maar wilde niet lukken. Onderstaande is vanuit een generator via https://coolors.co/gradient-maker/e9b7ce-ff0000-ff0000-00c8ff-4000ff-f7ff00-1aff00?position=0,0,9,33,52,76,92&opacity=100,100,100,100,100,100,100&type=linear&rotation=45*/
-  background: hsla(332, 53%, 82%, 1);
-  background: linear-gradient(45deg, hsla(332, 53%, 82%, 1) 0%, hsla(0, 100%, 50%, 1) 0%, hsla(0, 100%, 50%, 1) 9%, hsla(193, 100%, 50%, 1) 33%, hsla(255, 100%, 50%, 1) 52%, hsla(62, 100%, 50%, 1) 76%, hsla(114, 100%, 50%, 1) 92%);
+
+
+
+
+
+
+
+/* OPMAAK LI 2 */
+
+ol li:nth-of-type(2) div{
+  /* Bovenstaande was mijn poging tot de gradient, maar wilde niet lukken. Onderstaande is vanuit een generator via https://coolors.co/gradient-maker/e9b7ce-ff0000-ff0000-00c8ff-4000ff-f7ff00-1aff00?position=0,0,9,33,52,76,92&opacity=100,100,100,100,100,100,100&type=linear&rotation=45*/
+  background: var(--vraagteken2achtergrond);
   filter: progid: DXImageTransform.Microsoft.gradient( startColorstr="#E9B7CE", endColorstr="#FF0000", GradientType=1 );
   position: absolute;
   top:35%;
   
   width: 10vmin;
   height: 10vmin;
-  /* rotate:45deg; */
   animation-name: rotate;
   animation-duration: 5s;
   animation-iteration-count: infinite;
   animation-timing-function: linear;
 }
 
-li:nth-of-type(2) div:nth-of-type(1) {
+ol li:nth-of-type(2) div:nth-of-type(1) {
   left:40%;
-  box-shadow: .5em .5em 1.5em black;
+  box-shadow: .5em .5em 1.5em var(--schaduwzwart);
 }
 
-li:nth-of-type(2) div:nth-of-type(2) {
+ol li:nth-of-type(2) div:nth-of-type(2) {
   left:60%;
   rotate:180deg;
-  box-shadow: -.5em -.5em 1.5em black;
+  box-shadow: -.5em -.5em 1.5em var(--schaduwzwart);
 }
 
 @keyframes rotate {
@@ -140,10 +438,10 @@ li:nth-of-type(2) div:nth-of-type(2) {
   }
 }
 
-li:nth-of-type(2) span{
+ol li:nth-of-type(2) span{
   display:block;
   font-size:8vmin;
-  color: white;
+  color: var(--wit);
   font-family: vraagteken3;
   line-height: 1.2em;
   display:flex;
@@ -171,11 +469,19 @@ li:nth-of-type(2) span{
 }
 
 
-  li:nth-of-type(3){
+
+
+
+
+
+
+/* OPMAAK LI 3 */
+
+ol  li:nth-of-type(3){
     display: flex;
     justify-content: center;
     align-items: center;
-    color: white;
+    color: var(--wit);
     font-size:8vmin;
     font-family: "vraagteken3";
     line-height:1em;
@@ -187,24 +493,14 @@ li:nth-of-type(2) span{
   .cube {
     --cube-size:60px;
     width: var(--cube-size);
-    aspect-ratio:1/1;
     transform-style: preserve-3d;
     position: absolute;
     animation-name: bounce;
     animation-duration: 1.5s;
     animation-timing-function: ease-in-out;
     animation-iteration-count: infinite;
-    box-shadow: 1em 1em 2em black;
+    box-shadow: 1em 1em 2em var(--schaduwzwart);
   }
-
-  /* @keyframes bounce {
-  0%{bottom: 0.5em;
-  margin-bottom: 2.5em;}
-  50%{bottom: 1em;
-    margin-bottom: 2.5em;}
-  100%{bottom: 0.5em;
-    margin-bottom: 2.5em;}
-  } */
 
   @keyframes bounce {
   0%{
@@ -221,47 +517,47 @@ li:nth-of-type(2) span{
   .face {
   width: 100%;
   height: 100%;
-  background: #ff6d00;
-  border: 2px solid white;
+  border: 2px solid var(--wit);
   position: absolute;
   top:0;
   left:0;
   }
   .front {
   transform: translateZ( calc(var(--cube-size) / 2) );
-  background-color: red;
+  background-color: var(--vraagteken3rood)
   }
   .back {
   transform: translateZ( calc(var(--cube-size) / -2) ) rotateY(180deg);
-  background-color: red;
+  background-color: var(--vraagteken3rood)
   }
   .left {
   transform: translateX( calc(var(--cube-size) / 2)  ) rotateY(-90deg);
-  background-color: blue;
+  background-color: var(--vraagteken3blauw)
   }
   .right {
-  transform: translateX( calc(var(--cube-size) / -2) ) rotateY(90deg);
-  background-color: blue;
+  transform: translateX( calc(var(--cube-size) / -2) ) rotateY(-90deg);
+  background-color: var(--vraagteken3blauw)
   }
   .top {
   transform: translateY( calc(var(--cube-size) / -2) ) rotateX(90deg);
-  background-color: green;
+  background-color: var(--vraagteken3groen)
   }
   .bottom {
   transform: translateY( calc(var(--cube-size) / 2) ) rotateX(-90deg);
-  background-color: green;
+  background-color: var(--vraagteken3groen)
   }
 
-  @keyframes turn {
-    from {
-      transform: rotatey(0deg) rotatex(45deg) rotatez(60deg);
-    }
-    to {
-      transform: rotatey(360deg)rotatex(45deg)rotatez(60deg);
-    }
-  }
 
-  li:nth-of-type(4){
+
+
+
+
+
+
+
+  /* OPMAAK LI 4 */
+
+ol  li:nth-of-type(4){
     display: flex;
     justify-content: center;
     align-items: center;
@@ -272,9 +568,8 @@ li:nth-of-type(2) span{
   }
 
   .cube2 {
-    --cube-size:60px;
+    --cube-size:9vmin;
     width: var(--cube-size);
-    aspect-ratio:1/1;
     transform-style: preserve-3d;
     animation: turn 5s linear infinite;
     position: absolute;
@@ -283,89 +578,75 @@ li:nth-of-type(2) span{
   .face2 {
   width: 100%;
   height: 100%;
-  background: #ff6d00;
-  border: 5px solid white;
+  border: 5px solid var(--wit);
   position: absolute;
   top:0;
   left:0;
   opacity: 40%;
   }
+
   .front2 {
   transform: translateZ( calc(var(--cube-size) / 2) );
-  background-color: deeppink;
-  background-image:
-  linear-gradient(45deg, lightpink 25%, transparent 25%), 
-  linear-gradient(-45deg, lightpink 25%, transparent 25%),
-  linear-gradient(45deg, transparent 75%, lightpink 75%),
-  linear-gradient(-45deg, transparent 75%, lightpink 75%);
+  background-color: var(--vraagteken4vlak1achtergrond);
+  background-image: var(--vraagteken4vlak1);
 
   background-size:20px 20px;    
   background-position:0 0, 9px 0, 9px -9px, 0px 9px;
   }
+
   .back2 {
   transform: translateZ( calc(var(--cube-size) / -2) ) rotateY(180deg);
-  background-color: dodgerblue;
-  background-image:
-  linear-gradient(45deg, deeppink 25%, transparent 25%), 
-  linear-gradient(-45deg, deeppink 25%, transparent 25%),
-  linear-gradient(45deg, transparent 75%, deeppink 75%),
-  linear-gradient(-45deg, transparent 75%, deeppink 75%);
-
+  background-color: var(--vraagteken4vlak2achtergrond);
+  background-image: var(--vraagteken4vlak2);
   background-size:20px 20px;    
   background-position:0 0, 9px 0, 9px -9px, 0px 9px;
   }
   .left2 {
   transform: translateX( calc(var(--cube-size) / 2)  ) rotateY(-90deg);
-  background-color: darkblue;
-  background-image:
-  linear-gradient(45deg, yellow 25%, transparent 25%), 
-  linear-gradient(-45deg, yellow 25%, transparent 25%),
-  linear-gradient(45deg, transparent 75%, yellow 75%),
-  linear-gradient(-45deg, transparent 75%, yellow 75%);
-
+  background-color: var(--vraagteken4vlak3achtergrond);
+  background-image: var(--vraagteken4vlak3);
   background-size:20px 20px;    
   background-position:0 0, 9px 0, 9px -9px, 0px 9px;
   }
   .right2 {
   transform: translateX( calc(var(--cube-size) / -2) ) rotateY(90deg);
-  background-color: forestgreen;
-  background-image:
-  linear-gradient(45deg, turquoise 25%, transparent 25%), 
-  linear-gradient(-45deg, turquoise 25%, transparent 25%),
-  linear-gradient(45deg, transparent 75%, turquoise 75%),
-  linear-gradient(-45deg, transparent 75%, turquoise 75%);
-
+  background-color: var(--vraagteken4vlak1achtergrond);
+  background-image: var(--vraagteken4vlak4);
   background-size:20px 20px;    
   background-position:0 0, 9px 0, 9px -9px, 0px 9px;
   }
   .top2 {
   transform: translateY( calc(var(--cube-size) / -2) ) rotateX(90deg);
-  background-color: turquoise;
-  background-image:
-  linear-gradient(45deg, darkorange 25%, transparent 25%), 
-  linear-gradient(-45deg, darkorange 25%, transparent 25%),
-  linear-gradient(45deg, transparent 75%, darkorange 75%),
-  linear-gradient(-45deg, transparent 75%, darkorange 75%);
-
+  background-color: var(--vraagteken4vlak5achtergrond);
+  background-image: var(--vraagteken4vlak5);
   background-size:20px 20px;    
   background-position:0 0, 9px 0, 9px -9px, 0px 9px;
   }
   .bottom2 {
   transform: translateY( calc(var(--cube-size) / 2) ) rotateX(-90deg);
-  background-color: deeppink;
-  background-image:
-  linear-gradient(45deg, purple 25%, transparent 25%), 
-  linear-gradient(-45deg, purple 25%, transparent 25%),
-  linear-gradient(45deg, transparent 75%, purple 75%),
-  linear-gradient(-45deg, transparent 75%, purple 75%);
-
+  background-color: var(--vraagteken4vlak1achtergrond);
+  background-image: var(--vraagteken4vlak6);
   background-size:20px 20px;    
   background-position:0 0, 9px 0, 9px -9px, 0px 9px;
   }
   
-  li:nth-of-type(4) span{
+
+ol li:nth-of-type(4) div div:last-of-type {
+    position: relative;
+    height: 100%;
+
+    animation-name: vraagtekenbounce1;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+  }
+
+ol li:nth-of-type(4) span{
+    display:block;
+    height:100%;
+
     font-size:8vmin;
-    color: white;
+    color: var(--wit);
     font-family: vraagteken3;
     line-height: 1.2em;
     display:flex;
@@ -373,34 +654,58 @@ li:nth-of-type(2) span{
     justify-content: center;
     font-family: "vraagteken4", sans-serif;
 
-    animation-name: vraagtekenbounce1;
+    
+    text-shadow: 2px 2px 3px var(--shaduwblauw);
+
+    animation-name: vraagtekenscale1;
     animation-duration: 1.5s;
+    animation-timing-function: ease-in-out;
     animation-iteration-count: infinite;
-    text-shadow: 2px 2px 3px darkblue;
+  }
+
+  @keyframes vraagtekenscale1{
+    0% {
+      scale:1;
+    }
+    50% {
+      scale:1.5;
+    }
+    100% {
+      scale:1;
+    }
   }
 
   @keyframes vraagtekenbounce1 {
     0%{
-      transform: scaleX(1) scaleY(1) scaleZ(1)
-  }
-  50% {
-    transform: scaleX(1.5) scaleY(1.5) scaleZ(1.5) 
-  }
-  100% {
-    transform: scaleX(1) scaleY(1) scaleZ(1)
-}
+      transform: rotateY(0deg) rotatex(45deg)  rotatez(-60deg) ;
+    }
+    100% {
+      transform: rotateY(360deg) rotatex(45deg) rotatez(-60deg);
+    }
   }
 
   @keyframes turn {
-    from {
-      transform: rotatey(0deg) rotatex(45deg) rotatez(60deg);
+    0% {
+      transform: rotatez(60deg) rotatex(-45deg) rotateY(0deg) ;
     }
-    to {
-      transform: rotatey(360deg)rotatex(45deg)rotatez(60deg);
+    100% {
+      transform: rotatez(60deg) rotatex(-45deg) rotateY(-360deg);
     }
   }
 
-  li:nth-of-type(5){
+
+
+
+
+
+
+
+
+
+
+  /* OPMAAK LI 5 */
+
+ol li:nth-of-type(5){
     display: flex;
     justify-content: center;
     align-items: center;
@@ -411,9 +716,8 @@ li:nth-of-type(2) span{
   }
 
   .cube3 {
-    --cube-size:60px;
+    --cube-size:9vmin;
     width: var(--cube-size);
-    aspect-ratio:1/1;
     transform-style: preserve-3d;
     animation: turn 5s linear infinite;
     position: absolute;
@@ -423,7 +727,7 @@ li:nth-of-type(2) span{
   width: 100%;
   height: 100%;
   background: black;
-  border: 3px solid white;
+  border: 3px solid var(--wit);
   position: absolute;
   top:0;
   left:0;
@@ -431,127 +735,107 @@ li:nth-of-type(2) span{
   }
   .front3 {
   transform: translateZ( calc(var(--cube-size) / 2) );
-  background-color: red;
-  background-image:
-  linear-gradient(45deg, black 25%, transparent 25%), 
-  linear-gradient(-45deg, black 25%, transparent 25%),
-  linear-gradient(45deg, transparent 75%, black 75%),
-  linear-gradient(-45deg, transparent 75%, black 75%);
-
+  background-color: var(--vraagteken5rood);
+  background-image: var(--vraagteken5blokjes);
   background-size:20px 20px;    
   background-position:0 0, 9px 0, 9px -9px, 0px 9px;
   }
   .back3 {
   transform: translateZ( calc(var(--cube-size) / -2) ) rotateY(180deg);
-  background-color: yellow;
-  background-image:
-  linear-gradient(45deg, black 25%, transparent 25%), 
-  linear-gradient(-45deg, black 25%, transparent 25%),
-  linear-gradient(45deg, transparent 75%, black 75%),
-  linear-gradient(-45deg, transparent 75%, black 75%);
-
+  background-color: var(--vraagteken5geel);
+  background-image: var(--vraagteken5blokjes);
   background-size:20px 20px;    
   background-position:0 0, 9px 0, 9px -9px, 0px 9px;
   }
   .left3 {
   transform: translateX( calc(var(--cube-size) / 2)  ) rotateY(-90deg);
-  background-color: turquoise;
-  background-image:
-  linear-gradient(45deg, black 25%, transparent 25%), 
-  linear-gradient(-45deg, black 25%, transparent 25%),
-  linear-gradient(45deg, transparent 75%, black 75%),
-  linear-gradient(-45deg, transparent 75%, black 75%);
-
+  background-color: var(--vraagteken5turquoise);
+  background-image: var(--vraagteken5blokjes);
   background-size:20px 20px;    
   background-position:0 0, 9px 0, 9px -9px, 0px 9px;
   }
   .right3 {
   transform: translateX( calc(var(--cube-size) / -2) ) rotateY(90deg);
-  background-color: deeppink;
-  background-image:
-  linear-gradient(45deg, black 25%, transparent 25%), 
-  linear-gradient(-45deg, black 25%, transparent 25%),
-  linear-gradient(45deg, transparent 75%, black 75%),
-  linear-gradient(-45deg, transparent 75%, black 75%);
-
+  background-color: var(--vraagteken5roze);
+  background-image: var(--vraagteken5blokjes);
   background-size:20px 20px;    
   background-position:0 0, 9px 0, 9px -9px, 0px 9px;
   }
   .top3 {
   transform: translateY( calc(var(--cube-size) / -2) ) rotateX(90deg);
-  background-color: dodgerblue;
-  background-image:
-  linear-gradient(45deg, black 25%, transparent 25%), 
-  linear-gradient(-45deg, black 25%, transparent 25%),
-  linear-gradient(45deg, transparent 75%, black 75%),
-  linear-gradient(-45deg, transparent 75%, black 75%);
-
+  background-color: var(--vraagteken5blauw);
+  background-image: var(--vraagteken5blokjes);
   background-size:20px 20px;    
   background-position:0 0, 9px 0, 9px -9px, 0px 9px;
   }
   .bottom3 {
   transform: translateY( calc(var(--cube-size) / 2) ) rotateX(-90deg);
-  background-color: forestgreen;
-  background-image:
-  linear-gradient(45deg, black 25%, transparent 25%), 
-  linear-gradient(-45deg, black 25%, transparent 25%),
-  linear-gradient(45deg, transparent 75%, black 75%),
-  linear-gradient(-45deg, transparent 75%, black 75%);
-
+  background-color: var(--vraagteken5groen);
+  background-image: var(--vraagteken5blokjes);
   background-size:20px 20px;    
   background-position:0 0, 9px 0, 9px -9px, 0px 9px;
   }
+
+ ol li:nth-of-type(5) div div:last-of-type {
+    position: relative;
+    height: 100%;
+
+    animation-name: vraagtekenbounce1;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+  }
   
-  li:nth-of-type(5) span{
+ol  li:nth-of-type(5) span{
     font-size:8vmin;
-    color: white;
+    color: var(--wit);
     font-family: vraagteken3;
     line-height: 1.2em;
     display:flex;
     align-items:center;
     justify-content: center;
     font-family: "vraagteken4", sans-serif;
+    text-shadow: 4px 4px 4px var(--schaduwzwart);
 
-    animation-name: vraagtekenbounce2;
-    animation-duration: 4s;
+    animation-name: vraagtekendraai;
+    animation-duration: 5s;
     animation-iteration-count: infinite;
-    text-shadow: 4px 4px 4px black;
+    animation-timing-function: linear;
   }
 
-  @keyframes vraagtekenbounce2 {
-    0%{
-      transform: rotateX(0deg) rotateY(0deg) rotateZ(0deg);
-  }
-  50% {
-    transform: rotateX(0deg) rotateY(360deg) rotateZ(0deg);
-  }
-  100% {
-    transform: rotateX(0deg) rotateY(0deg) rotateZ(0deg);
-}
-  }
-
-  @keyframes turn {
-    from {
-      transform: rotatey(0deg) rotatex(45deg) rotatez(60deg);
+  @keyframes vraagtekendraai {
+    0% {
+      transform: rotatey(0deg);
     }
-    to {
-      transform: rotatey(360deg)rotatex(45deg)rotatez(60deg);
+    50% {
+      transform: rotatey(180deg);
+    }
+    100%{
+      transform: rotatey(0deg);
     }
   }
 
-  li:nth-of-type(6){
+
+
+
+
+
+
+  /* OPMAAK LI 6 */
+
+ol  li:nth-of-type(6){
     display: flex;
     justify-content: center;
     align-items: center;
     line-height: 1.2em;
     display:flex;
     justify-content: center;
+
   }
 
   .cube4 {
-    --cube-size:60px;
+    --cube-size:9vmin;
     width: var(--cube-size);
-    aspect-ratio:1/1;
     transform-style: preserve-3d;
     animation: turn 5s linear infinite;
     position: absolute;
@@ -560,64 +844,72 @@ li:nth-of-type(2) span{
   .face4 {
   width: 100%;
   height: 100%;
-  background: #ff6d00;
+  border: 5px solid var(--wit);
   position: absolute;
   top:0;
   left:0;
   opacity: 40%;
   }
+
   .front4 {
   transform: translateZ( calc(var(--cube-size) / 2) );
-  background-color:deeppink;
-  background-image: radial-gradient(purple 15%, transparent 15%),
-  radial-gradient(turquoise 40%, transparent 40%);
+  background-color:var(--vraagteken6roze);
+  background-image: var(--vraagteken6stippaars);
   background-size:20px 20px;
   background-position: 5px 10px, 40px 40px; 
   }
   .back4 {
   transform: translateZ( calc(var(--cube-size) / -2) ) rotateY(180deg);
-  background-color:deeppink;
-  background-image: radial-gradient(purple 15%, transparent 15%),
-  radial-gradient(turquoise 40%, transparent 40%);
+  background-color:var(--vraagteken6roze);
+  background-image: var(--vraagteken6stippaars);
   background-size:20px 20px;
   background-position: 5px 10px, 40px 40px; 
   }
   .left4 {
   transform: translateX( calc(var(--cube-size) / 2)  ) rotateY(-90deg);
-  background-color:dodgerblue;
-  background-image: radial-gradient(dodgerblue 15%, transparent 15%),
-  radial-gradient(white 40%, transparent 40%);
+  background-color:var(--vraagteken6blauw);
+  background-image: var(--vraagteken6stipwit);
   background-size:20px 20px;
   background-position: 5px 10px, 40px 40px; 
   }
   .right4 {
   transform: translateX( calc(var(--cube-size) / -2) ) rotateY(90deg);
-  background-color:turquoise;
-  background-image: radial-gradient(dodgerblue 15%, transparent 15%),
-  radial-gradient(white 40%, transparent 40%);
+  background-color:var(--vraagteken6turquoise);
+  background-image: var(--vraagteken6stipwit);
   background-size:20px 20px;
   background-position: 5px 10px, 40px 40px; 
   }
   .top4 {
   transform: translateY( calc(var(--cube-size) / -2) ) rotateX(90deg);
-  background-color:lightgreen;
-  background-image: radial-gradient(turquoise 15%, transparent 15%),
-  radial-gradient(deeppink 40%, transparent 40%);
+  background-color:var(--vraagteken6groen);
+  background-image: var(--vraagteken6stiproze);
   background-size:20px 20px;
   background-position: 5px 10px, 40px 40px; 
   }
   .bottom4 {
   transform: translateY( calc(var(--cube-size) / 2) ) rotateX(-90deg);
-  background-color:lightgreen;
-  background-image: radial-gradient(turquoise 15%, transparent 15%),
-  radial-gradient(deeppink 40%, transparent 40%);
+  background-color:var(--vraagteken6groen);
+  background-image: var(--vraagteken6stiproze);
   background-size:20px 20px;
   background-position: 5px 10px, 40px 40px; 
   }
   
-  li:nth-of-type(6) span{
+ol  li:nth-of-type(6) div div:last-of-type {
+    position: relative;
+    height: 100%;
+
+    animation-name: vraagtekenbounce1;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+  }
+
+ol  li:nth-of-type(6) span{
+    display:block;
+    height:100%;
+
     font-size:8vmin;
-    color: white;
+    color: var(--wit);
     font-family: vraagteken3;
     line-height: 1.2em;
     display:flex;
@@ -625,53 +917,49 @@ li:nth-of-type(2) span{
     justify-content: center;
     font-family: "vraagteken4", sans-serif;
 
-    animation-name: vraagtekenbounce3;
+    
+    text-shadow: 2px 2px 3px var(--shaduwblauw);
+
+    animation-name: vraagtekenscale1;
     animation-duration: 1.5s;
+    animation-timing-function: ease-in-out;
     animation-iteration-count: infinite;
-    text-shadow: 5px 5px 5px dodgerblue;
   }
 
-  @keyframes vraagtekenbounce3 {
-    0%{
-      transform: scaleX(1) scaleY(1) scaleZ(1)
-  }
-  50% {
-    transform: scaleX(1.5) scaleY(1.5) scaleZ(1.5) 
-  }
-  100% {
-    transform: scaleX(1) scaleY(1) scaleZ(1)
-}
-  }
 
-/* transform: translateZ( calc(var(--cube-size) / 2) );
-  background-color:black;
-  background-image: radial-gradient(blue 15%, transparent 15%),
-  radial-gradient(red 40%, transparent 40%);
-  background-size:20px 20px;
-  background-position: 5px 10px, 40px 40px; */
 
-/* Vragen
-- Vraagteken roteren div 4
-- Responsiveness ruit div 4
-  
 
-/* li:nth-of-type(3) div{
-  background-color: green;
-  top:35%;
-  position: absolute;
-  width: 10vmin;
-  height: 10vmin;
-  left:40%;
-} */
 
-/* li:nth-of-type(3) span{
-  color: white;
-  display:block;
-  font-size:8vmin;
-  
-  line-height: 1.2em;
+
+
+
+
+
+/* DE BUTTONS */
+ul {
+  margin:0;
+  padding:0;
+  list-style: none;
   display:flex;
-  align-items:center;
   justify-content: center;
-  font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-} */
+  gap:1em;
+}
+
+ul li{
+  width:12%;
+}
+
+ul li button{
+  width: 100%;
+  padding:0;
+  height: auto;
+  border-style: none;
+  background-color: transparent;
+  position: relative;
+}
+
+ul li button img {
+  width:100%;
+  height:auto;
+  display:block;
+}
