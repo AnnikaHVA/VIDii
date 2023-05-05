@@ -62,15 +62,16 @@ Ik heb feedback gekregen op mijn eerste schetsen.
  Het eerste punt wat naar voren kwam is dat in plaats van een andere 'kleur overlay' bij elke variant van Mario Kart ik een thema kan toevoegen. Hierbij gaf de feedbackgever een idee van een map die je over tijd ziet veranderen.
 
   #### oplossing:
-Om dit toe te passen ben ik opzoek gegaan naar meerdere varianten van het Mario Circuit. Hierbij heb ik gekeken naar de structuur van de grond, de weg en van het gras. Deze heb ik vervolgens apart opgezocht en hiermee verschillende achtergronden gemaakt.
-<img src="readme-images/Screen3.png" width="375px" alt="grond structuur Mario">
-<img src="readme-images/Screen4.png" width="375px" alt="varianten circuit">
-<<img src="readme-images/Screen5.png" width="375px" alt="zelfgemaakt circuit">
+  Om dit toe te passen ben ik opzoek gegaan naar meerdere varianten van het Mario Circuit. Hierbij heb ik gekeken naar de structuur van de grond, de weg en van het gras. Deze heb ik vervolgens apart opgezocht en hiermee verschillende achtergronden gemaakt.
+  <img src="readme-images/Screen3.png" width="375px" alt="grond structuur Mario">
+  <img src="readme-images/Screen4.png" width="375px" alt="varianten circuit">
+  <img src="readme-images/Screen5.png" width="375px" alt="zelfgemaakt circuit">
 
 
 
   ### Bevinding 2:
   Het tweede punt ging over de besturing, hier heb ik verschillende mogelijkheden gehoord wat er mogelijk is. Zo kan ik scrollen met een gefixeerde positie, met pijltjes besturen of een muis volgen.
+
   #### oplossing:
   Uiteindelijk heb ik in overleg gekozen om te scrollen i.v.m. de moeilijkheidsgraad die hier lager ligt.
 
@@ -78,20 +79,23 @@ Om dit toe te passen ben ik opzoek gegaan naar meerdere varianten van het Mario 
 
   ### Bevinding 3:
   Mijn derde feedback heb ik gekregen over de paaseieren in de game. Zo heb ik nog meer ideen gekregen wat ik hiervoor zou kunnen gebruiken. Zelf had ik al het ideen om een 'fake box' neer te zetten. Nu heb ik ook nog meer variaties die ik kan toepassen; een banaan, olievlek en mushrooms.
+  
   #### oplossing:
   Deze ga ik toepassen in mijn animatie.
 
- ### Bevinding 4:
- Terwijl ik aan de slag ben gegaan ben ik tegen meerdere dingen aangelopen. Zo wilde ik graag een font van het web gebruiken voor het vraagteken in de eerst box, alleen wilde deze maar niet geactiveerd worden.
- <<img src="readme-images/Screen1.png" width="375px" alt="problemen font">
-#### oplossing:
-Na veel Googelen lukte het nog steeds niet en ben ik met Sanne gaan zitten. Het probleem was simpel terug te leiden naar enkele punten die in de source vermelding miste.
+  ### Bevinding 4:
+  Terwijl ik aan de slag ben gegaan ben ik tegen meerdere dingen aangelopen. Zo wilde ik graag een font van het web gebruiken voor het vraagteken in de eerst box, alleen wilde deze maar niet geactiveerd worden.
+  <img src="readme-images/Screen1.png" width="375px" alt="problemen font">
+  
+  #### oplossing:
+  Na veel Googelen lukte het nog steeds niet en ben ik met Sanne gaan zitten. Het probleem was simpel terug te leiden naar enkele punten die in de source vermelding miste.
 
-### Bevinding 5:
-Voor het tweede vierkant wilde ik deze vullen met een gradient. Vanuit de eerste instroomles had ik hier al ervaring mee, maar ook de gradient wilde niet tot stand komen. Ook hier weer veel gegoogled, maar ik kon het probleem niet vinden.
-<<img src="readme-images/Screen2.png" width="375px" alt="problemen gradient">
-#### oplossing:
-Uiteindelijk heb ik een gradient generator van het internet gebruikt. Dit had ik nooit eerder gedaan, maar het was eenvoudig om uit te voeren.
+  ### Bevinding 5:
+  Voor het tweede vierkant wilde ik deze vullen met een gradient. Vanuit de eerste instroomles had ik hier al ervaring mee, maar ook de gradient wilde niet tot stand komen. Ook hier weer veel gegoogled, maar ik kon het probleem niet vinden.
+  <img src="readme-images/Screen2.png" width="375px" alt="problemen gradient">
+  
+  #### oplossing:
+  Uiteindelijk heb ik een gradient generator van het internet gebruikt. Dit had ik nooit eerder gedaan, maar het was eenvoudig om uit te voeren.
 </details>
 
 
@@ -103,9 +107,9 @@ Uiteindelijk heb ik een gradient generator van het internet gebruikt. Dit had ik
   <summary>Mijn bevindingen + wijzigingen (minimaal 5)</summary>
   Dit is mijn ontvangen feedback:
 
-  <<img src="readme-images/feedback2a.png" width="375px" alt="voorkant feedback">
-  <<img src="readme-images/feedback2b.png" width="375px" alt="achterkant feedback">
-  <<img src="readme-images/feedback2c.png" width="375px" alt="toevoegingen feedback">
+  <img src="readme-images/feedback2a.png" width="375px" alt="voorkant feedback">
+  <img src="readme-images/feedback2b.png" width="375px" alt="achterkant feedback">
+  <img src="readme-images/feedback2c.png" width="375px" alt="toevoegingen feedback">
 
   ### Bevinding 1:
   Mijn eerste feedback was dat mijn elementen nog niet netjes zijn uitgelijnd. Zo is het verloop van de wegen nog niet correct. 
@@ -114,19 +118,19 @@ Uiteindelijk heb ik een gradient generator van het internet gebruikt. Dit had ik
 
   #### oplossing:
   Dit heb ik opgelost door de wegen te herzien in Illustrator en de overgang van de wegen goed aan te laten sluiten. 
-  <<img src="readme-images/uitlijningwegen.png" width="375px" alt="uitlijning wegen">
+  <img src="readme-images/uitlijningwegen.png" width="375px" alt="uitlijning wegen">
 
 
   ### Bevinding 2:
   Boxen zijn uit proportie als ze een ander formaat aannemen.
 
-  <<img src="readme-images/boxvervormd.png" width="375px" alt="box uit proportie">
+  <img src="readme-images/boxvervormd.png" width="375px" alt="box uit proportie">
   
   #### oplossing:
   De boxen die niet relatief werkten heb ik opgelost door samen met Sanne hier naar te kijken. Uiteindelijk hebben we een variabele van de maat gemaakt, namelijk 60 px. Vervolgens hebben we deze variabele een relatieve waarde als 9vmin gegeven en voor de breedte de variabele aangehouden.
 
-  <<img src="readme-images/varcubesize.png" width="375px" alt="variabele cube size">  
-   <<img src="readme-images/cube2toegepast.png" width="375px" alt="variabele cube size toegepast">  
+  <img src="readme-images/varcubesize.png" width="375px" alt="variabele cube size">  
+  <img src="readme-images/cube2toegepast.png" width="375px" alt="variabele cube size toegepast">  
 
 
   ### Bevinding 3:
@@ -142,8 +146,8 @@ Uiteindelijk heb ik een gradient generator van het internet gebruikt. Dit had ik
   #### oplossing:
   Ik heb overal titels toegevoegd waar de css over gaat. Denk aan Custom properties, de buttons, mario en de verschillende Li's.
 
-  <<img src="readme-images/titelcssa.png" width="375px" alt="toegevoegde titels">  
-   <<img src="readme-images/titelcssb.png" width="375px" alt="toegevoegde titels">  
+  <img src="readme-images/titelcssa.png" width="375px" alt="toegevoegde titels">  
+  <img src="readme-images/titelcssb.png" width="375px" alt="toegevoegde titels">  
 
   ### Bevinding 5:
   Er zijn nog een Custom Properties toegevoegd. 
@@ -153,8 +157,8 @@ Uiteindelijk heb ik een gradient generator van het internet gebruikt. Dit had ik
 
   Hieronder zie je de originele staat van de kleuren, zonder Custom Properties en eronder als ze wel zijn toegepast.
  
-  <<img src="readme-images/kleurgeencp.png" width="375px" alt="code geen cp">  
-  <<img src="readme-images/kleurwelcp.png" width="375px" alt="toegevoegde cp">  
+  <img src="readme-images/kleurgeencp.png" width="375px" alt="code geen cp">  
+  <img src="readme-images/kleurwelcp.png" width="375px" alt="toegevoegde cp">  
 
   ### Bevinding 5:
   Als laatste had ik nog geen bronnen toegevoegd in mijn css, terwijl ik deze wel heb gebruikt.
@@ -162,7 +166,7 @@ Uiteindelijk heb ik een gradient generator van het internet gebruikt. Dit had ik
    #### oplossing:
    De bronnen zijn toegevoegd en ook in de bronnenlijst gezet.
 
-   <<img src="readme-images/bronvermelding.png" width="375px" alt="bronvermelding">  
+   <img src="readme-images/bronvermelding.png" width="375px" alt="bronvermelding">  
 
 </details>
 
@@ -229,8 +233,12 @@ Uiteindelijk heb ik een gradient generator van het internet gebruikt. Dit had ik
 
 Nb. Wees specifiek ('css-tricks' als bron is bijv. niet specifiek genoeg).
 
-1. bron 1
-2. bron 2
-3. ...
+1. https://www.fontsquirrel.com
+2. https://cssgradient.io
+3. https://www.geeksforgeeks.org/how-to-create-chess-pattern-background-using-html-and-css/ 
+4. https://www.quackit.com/css/codes/patterns/circular_background_patterns.cfm
+5. https://www.css.cafe/3d-in-css-and-the-true-meaning-of-perspective/
+6. https://www.cssportal.com/css-3d-transform-generator/
+7. Alle presentaties en voorbeelden op DLO
 
 </details>
