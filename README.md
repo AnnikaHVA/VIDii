@@ -177,27 +177,50 @@ Ik heb feedback gekregen op mijn eerste schetsen.
 
 <details>
   <summary>Mijn bevindingen + wijzigingen (minimaal 5)</summary>
+  Dit is mijn ontvangen feedback:
+
+  <img src="readme-images/feedback3.png" width="375px" alt="feedback 3e keer">  
   
   ### Bevinding 1:
-  Omschrijving van wat er nog niet orde was (tekst en afbeeding(en)).
+  Uit mijn feedback kreeg ik dat mijn finish lijn nog niet van hoge kwaliteit is.
+
+   <img src="readme-images/finishoud.png" width="375px" alt="oude finish lijn">  
 
   #### oplossing:
-  Beschrijving hoe je het hebt hebt opgelost of als het niet gelukt is hoe je het zou oplossen (tekst en afbeeding(en)).
+  Ik heb in Illustrator een hogere kwaliteit versie hiervan gemaakt.
 
+  <img src="readme-images/finish-eind.png" width="375px" alt="nieuwe finish lijn">  
 
 
   ### Bevinding 2:
-  Omschrijving van wat er nog niet orde was (tekst en afbeeding(en)).
+  Het veranderen van de H1 in dezelfde kleur van de mario buttons. Deze kwamen namelijk nog niet precies overeen.
+
+   <img src="readme-images/h1oud.png" width="375px" alt="oude h1"> 
 
   #### oplossing:
-  Beschrijving hoe je het hebt hebt opgelost of als het niet gelukt is hoe je het zou oplossen (tekst en afbeeding(en)).
+  Hiervoor heb ik gekeken welke rood het beste overeen kwam met de buttons en deze aangepast in de Custom Properties. Dit bleek maar een getal te verschillen, namelijk van (display-p3 0.7 0 0 / 1) naar (display-p3 0.8 0 0 / 1)
 
+  <img src="readme-images/h1nieuw.png" width="375px" alt="nieuwe h1"> 
 
 
   ### Bevinding 3:
-  ...
+  Het toevoegen van een hover state voor extra dimentie en interactie.
 
-</details>
+  #### oplossing:
+  Ik heb naar de powerpoints op DLO gekeken naar verdere uitleg hoe ik dit kon toevoegen. Met wat proberen en trail & error is het mij gelukt om de knoppen groter te laten worden en een rood randje te geven.
+
+  <img src="readme-images/buttonhover.png" width="375px" alt="hover state van button"> 
+
+  ### Bevinding 4:
+  Mijn Javascripts stond in chronologische volgorde hoe ik het geschreven had. Ik kreeg als feedback deze te ordenen in variabelen, functies en event listeners.
+
+  <img src="readme-images/javaoud.png" width="375px" alt="oude javascript"> 
+
+  #### oplossing:
+  Ik heb alles bij elkaar gezet en benoemd via een comment om het overzichtelijker te maken.
+
+  <img src="readme-images/javanieuw.png" width="375px" alt="nieuwe javascript">   
+  </details>
 
 
 
@@ -208,19 +231,32 @@ Ik heb feedback gekregen op mijn eerste schetsen.
   <summary>Mijn eindresultaat & persoonlijke ontwikkeling</summary>
 
   ### Je uitkomst - karakteristiek screenshot(s):
-  <img src="readme-images/dummy-plaatje.jpg" width="375px" alt="final ontwerp">
-
+  <img src="readme-images/eind1.jpg" width="375px" alt="final ontwerp">
+  <img src="readme-images/eind2.jpg" width="375px" alt="final ontwerp">
+  <img src="readme-images/eind3.jpg" width="375px" alt="final ontwerp">
+  <img src="readme-images/eind4.jpg" width="375px" alt="final ontwerp">
+  <img src="readme-images/eind5.jpg" width="375px" alt="final ontwerp">
+  <img src="readme-images/eind6.jpg" width="375px" alt="final ontwerp">
+  <img src="readme-images/eind7.jpg" width="375px" alt="final ontwerp">
+  <img src="readme-images/eind8.jpg" width="375px" alt="final ontwerp">
 
   ### Dit ging goed/Heb ik geleerd: 
-  Korte omschrijving met plaatje(s)
+  Ik heb geleerd hoe ik HTML, CSS en JS moet schrijven. Dit klinkt erg breed, maar zo breed was het ook voor mij. Ten eerste weet ik wat Li, Ol, Ul etc betekend en hoe ze in elkaar passen. Daarnaast is het grootste dat ik geleerd heb met CSS hoe ik moet animeren. Bovendien weet ik ook hoe ik nu 3d blokken moet maken de bewegen. Ook heb ik geleerd hoe ik een knop maak en daar een actie aan koppel en deze een hover state geef.
 
-  <img src="readme-images/dummy-plaatje.jpg" width="375px" alt="top">
+  Ondanks super veel frustraties en tegenslagen ben ik er grotendeels uit gekomen door super veel op te zoeken en hulp te vragen in de lessen. 
 
+  Hieronder is een screenshot toen het maken van de cubes niet wilde lukken. Dit heb ik opgelost door online en in de les naar oplossingen te zoeken en vragen.
+
+  <img src="readme-images/probleemcube.jpg" width="375px" alt="problemen met de css van een cube">
+  <img src="readme-images/probleemanimeren.jpg" width="375px" alt="problemen met de css van een cube">
 
   ### Dit was lastig/Is niet gelukt:
-  Korte omschrijving met plaatje(s)
+  Het was mijn oorspronkelijke idee om nog text toe te voegen als mario door een cube heen reed. Dit is qua tijd helaas niet gelukt, omdat ik nog veel tijd nodig had om mijn buttons af te maken. Bovendien had ik moeite om de animatie van de buttons stop te zetten om een text eroverheen te plaatsen. Als ik meer tijd had gehad en nog een mogelijkheid om dit te kunnen overleggen in de les had ik dit nog willen toevoegen.
 
-  <img src="readme-images/dummy-plaatje.jpg" width="375px" alt="bummer">
+  Daarnaast heb ik ook geprobeerd een active state aan de buttons toe te voegen, maar dit wilde niet lukken. De oplossing zal vast erg makkelijk zijn, maar ik kwam er niet uit.
+
+  <img src="readme-images/active.jpg" width="375px" alt="problemen met de active state">
+
 </details>
 
 

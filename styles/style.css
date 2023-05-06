@@ -26,7 +26,7 @@
 /*********************/
 
 :root {
-  --hkleur:color(display-p3 0.7 0 0 / 1);
+  --hkleur:color(display-p3 0.8 0 0 / 1);
   --pkleur:color(display-p3 0 0 0 / 1);
   --move-time:5s;
   /* LI 1 */
@@ -493,6 +493,7 @@ ol  li:nth-of-type(3){
   .cube {
     --cube-size:60px;
     width: var(--cube-size);
+    aspect-ratio:1/1;
     transform-style: preserve-3d;
     position: absolute;
     animation-name: bounce;
@@ -567,6 +568,7 @@ ol  li:nth-of-type(4){
 
   }
 
+  /* Voor het maken van de 3d cubes is de volgende bron gebruikt:https://www.css.cafe/3d-in-css-and-the-true-meaning-of-perspective/ */
   .cube2 {
     --cube-size:9vmin;
     width: var(--cube-size);
@@ -933,7 +935,7 @@ ol  li:nth-of-type(6) span{
 
 
 
-
+  
 
 /* DE BUTTONS */
 ul {
@@ -962,4 +964,12 @@ ul li button img {
   width:100%;
   height:auto;
   display:block;
+}
+
+ul li button img:hover {
+  transform:scale(1.1);
+	cursor:pointer;
+  filter:
+		drop-shadow(0 0 .25em var(--hkleur))
+		drop-shadow(0 0 .5em var(--hkleur));
 }
