@@ -231,14 +231,22 @@ Ik heb feedback gekregen op mijn eerste schetsen.
   <summary>Mijn eindresultaat & persoonlijke ontwikkeling</summary>
 
   ### Je uitkomst - karakteristiek screenshot(s):
-  <img src="readme-images/eind1.jpg" width="375px" alt="final ontwerp">
-  <img src="readme-images/eind2.jpg" width="375px" alt="final ontwerp">
-  <img src="readme-images/eind3.jpg" width="375px" alt="final ontwerp">
-  <img src="readme-images/eind4.jpg" width="375px" alt="final ontwerp">
-  <img src="readme-images/eind5.jpg" width="375px" alt="final ontwerp">
-  <img src="readme-images/eind6.jpg" width="375px" alt="final ontwerp">
-  <img src="readme-images/eind7.jpg" width="375px" alt="final ontwerp">
-  <img src="readme-images/eind8.jpg" width="375px" alt="final ontwerp">
+
+  <img src="readme-images/eind1.png" width="375px" alt="final ontwerp">
+
+  <img src="readme-images/eind2.png" width="375px" alt="final ontwerp">
+
+  <img src="readme-images/eind3.png" width="375px" alt="final ontwerp">
+
+  <img src="readme-images/eind4.png" width="375px" alt="final ontwerp">
+
+  <img src="readme-images/eind5.png" width="375px" alt="final ontwerp">
+
+  <img src="readme-images/eind6.png" width="375px" alt="final ontwerp">
+
+  <img src="readme-images/eind7.png" width="375px" alt="final ontwerp">
+
+  <img src="readme-images/eind8.png" width="375px" alt="final ontwerp">
 
   ### Dit ging goed/Heb ik geleerd: 
   Ik heb geleerd hoe ik HTML, CSS en JS moet schrijven. Dit klinkt erg breed, maar zo breed was het ook voor mij. Ten eerste weet ik wat Li, Ol, Ul etc betekend en hoe ze in elkaar passen. Daarnaast is het grootste dat ik geleerd heb met CSS hoe ik moet animeren. Bovendien weet ik ook hoe ik nu 3d blokken moet maken de bewegen. Ook heb ik geleerd hoe ik een knop maak en daar een actie aan koppel en deze een hover state geef.
@@ -247,15 +255,16 @@ Ik heb feedback gekregen op mijn eerste schetsen.
 
   Hieronder is een screenshot toen het maken van de cubes niet wilde lukken. Dit heb ik opgelost door online en in de les naar oplossingen te zoeken en vragen.
 
-  <img src="readme-images/probleemcube.jpg" width="375px" alt="problemen met de css van een cube">
-  <img src="readme-images/probleemanimeren.jpg" width="375px" alt="problemen met de css van een cube">
+  <img src="readme-images/probleemcube.png" width="375px" alt="problemen met de css van een cube">
+
+  <img src="readme-images/probleemanimeren.png" width="375px" alt="problemen met de css van een cube">
 
   ### Dit was lastig/Is niet gelukt:
   Het was mijn oorspronkelijke idee om nog text toe te voegen als mario door een cube heen reed. Dit is qua tijd helaas niet gelukt, omdat ik nog veel tijd nodig had om mijn buttons af te maken. Bovendien had ik moeite om de animatie van de buttons stop te zetten om een text eroverheen te plaatsen. Als ik meer tijd had gehad en nog een mogelijkheid om dit te kunnen overleggen in de les had ik dit nog willen toevoegen.
 
   Daarnaast heb ik ook geprobeerd een active state aan de buttons toe te voegen, maar dit wilde niet lukken. De oplossing zal vast erg makkelijk zijn, maar ik kwam er niet uit.
 
-  <img src="readme-images/active.jpg" width="375px" alt="problemen met de active state">
+  <img src="readme-images/active.png" width="375px" alt="problemen met de active state">
 
 </details>
 
